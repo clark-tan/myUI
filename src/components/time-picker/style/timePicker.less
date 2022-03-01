@@ -1,0 +1,16 @@
+@import "../../style/themes/common.less";
+.time-select {
+  .time-select-item {
+    &:hover {
+      color: #666;
+      font-weight: initial;
+    }
+    &.disabled {
+      color: @themes-font-color-disabled;
+      cursor: not-allowed;
+    }
+    &.selected:not(.disabled) {
+      color: @themes-bule-color;
+    }
+  }
+}

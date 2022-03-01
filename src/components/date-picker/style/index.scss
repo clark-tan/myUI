@@ -1,0 +1,245 @@
+$--default-color: #06c;
+$--default-font-color-write: #fff;
+$--default-font-color: #222;
+$--default-font-color-hover: #2b81d6;
+$--default-font-color-active: #0052a3;
+$--default-color-border: #d8d8d8;
+$--default-font-color-disable: #999;
+$--default-font-color-background: #f5f7fa;
+
+$--border: 1px solid #d8d8d8;
+.pa-datePicker-multi {
+  display: inline-block;
+  border-radius: 5px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  > *:first-child {
+    order: 1;
+  }
+  > *:nth-child(2) {
+    order: 3;
+  }
+  div.pa-datePicker-multi-range {
+    min-width: 40px;
+    order: 2;
+    text-align: center;
+  }
+
+  > .pa-datePicker,
+  > div:not(:last-child) {
+    width: calc(50% - 20px) !important;
+    .el-form-item__content {
+      width: 100%;
+      .pa-datePicker {
+        width: 100%;
+      }
+    }
+  }
+
+  .el-form-item {
+    margin: 0;
+  }
+}
+
+.pa-datePicker {
+  display: inline-block;
+  height: 100%;
+  .el-input {
+    width: 150px;
+  }
+
+  .el-input__icon {
+    line-height: 32px;
+  }
+  .el-input__inner {
+    width: 150px;
+    padding-right: 10px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    &:focus {
+      border-color: $--default-color;
+    }
+  }
+
+  &.pa-datePicker-time,
+  &.pa-datePicker-other {
+    .el-input {
+      width: 100%;
+    }
+    .el-input__inner {
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.pa-date-picker-popper {
+  margin-top: 2px !important;
+  margin-bottom: 2px !important;
+
+  &.el-date-picker {
+    color: $--default-font-color;
+    border: 1px solid $--default-color-border;
+
+    .el-time-panel {
+      .el-time-panel__footer {
+        .confirm {
+          color: $--default-color;
+        }
+        .el-time-panel__btn {
+          &:hover {
+            color: $--default-font-color-hover;
+          }
+          &:active {
+            color: $--default-font-color-active;
+          }
+        }
+      }
+    }
+    // 头部
+    .el-date-picker__header {
+      .el-date-picker__header-label {
+        &:hover {
+          color: $--default-font-color-hover;
+        }
+        &:active {
+          color: $--default-font-color-active;
+        }
+      }
+      .el-picker-panel__icon-btn {
+        &:hover {
+          color: $--default-font-color-hover;
+        }
+        &:active {
+          color: $--default-font-color-active;
+        }
+      }
+    }
+    .el-date-picker__header--bordered {
+      border-bottom: $--border;
+    }
+
+    .el-date-picker__time-header {
+      border-bottom: $--border;
+    }
+    .el-input__inner {
+      border: 1px solid $--default-color-border;
+    }
+
+    .el-date-table {
+      th {
+        color: $--default-font-color;
+        border-bottom: 1px solid $--default-color-border;
+      }
+      td {
+        &.current {
+          &:not(.disabled) {
+            span {
+              background: $--default-color;
+              color: $--default-font-color-write;
+            }
+          }
+        }
+
+        &.today {
+          span {
+            color: $--default-color;
+          }
+        }
+
+        &.available {
+          &:hover {
+            color: $--default-font-color-hover;
+          }
+        }
+      }
+    }
+
+    .el-year-table,
+    .el-month-table {
+      color: $--default-font-color;
+
+      td {
+        .cell {
+          color: $--default-font-color;
+        }
+        &.today {
+          .cell {
+            color: $--default-color;
+          }
+        }
+        &.current {
+          color: $--default-color;
+        }
+
+        &.disabled {
+          .cell {
+            color: $--default-font-color-disable !important;
+            background: $--default-font-color-background;
+          }
+        }
+        &.available {
+          .cell {
+            &:hover {
+              color: $--default-font-color-hover;
+            }
+          }
+        }
+      }
+    }
+
+    .el-month-table {
+      td {
+        .cell {
+          &:hover {
+            color: $--default-font-color-hover;
+          }
+        }
+      }
+    }
+
+    .el-picker-panel__sidebar {
+      .el-picker-panel__shortcut {
+        color: $--default-font-color;
+        &:hover {
+          color: $--default-font-color-hover;
+        }
+        &:active {
+          color: $--default-font-color-active;
+        }
+      }
+    }
+
+    .el-picker-panel__footer {
+      border-top: 1px solid $--default-color-border;
+      .el-button--text {
+        color: $--default-color;
+      }
+
+      .is-plain {
+        color: $--default-font-color;
+        &:hover {
+          color: $--default-font-color-hover;
+          border: 1px solid $--default-font-color-hover;
+        }
+        &:active {
+          color: $--default-font-color-active;
+          border: 1px solid $--default-font-color-active;
+        }
+      }
+    }
+  }
+
+  .popper__arrow {
+    border-bottom-color: $--default-color-border !important;
+    display: none;
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../style/themes/common.less';
+
+.pa-table-column-flex {
+  .vxe-cell {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.pa-table {
+  &.is-padding {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .vxe-toolbar {
+    .pa-btn.el-button + .pa-btn.el-button {
+      margin-left: 16px;
+    }
+  }
+}
+
+.pa-table {
+  .vxe-custom--option .vxe-checkbox--icon:before,
+  .vxe-export--panel-column-option .vxe-checkbox--icon:before,
+  .vxe-table--filter-option .vxe-checkbox--icon:before,
+  .vxe-table--render-default .vxe-cell--checkbox .vxe-checkbox--icon:before {
+    border-radius: 2px;
+    border: 1px solid @--checkbox-border-color;
+  }
+
+  .vxe-table--render-default .vxe-cell--radio {
+    .vxe-radio--icon:before {
+      border: 1px solid @--checkbox-border-color;
+    }
+    .vxe-radio--checked-icon:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+
+  .vxe-pager--wrapper {
+    button {
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+  }
+}

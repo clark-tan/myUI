@@ -1,0 +1,89 @@
+$border-radius-sm: 2px;
+$font-size-base: 14px;
+$primary-color: #0066cc;
+
+.pa-search-form {
+  width: 100%;
+  min-width: 1000px;
+  padding-top: 16px;
+  background: #ffffff;
+  border-radius: $border-radius-sm;
+  position: relative;
+  transition: all 1s linear;
+
+  .label-left {
+    .el-form-item__label {
+      text-align: left;
+    }
+  }
+
+  .el-input__inner {
+    height: 32px;
+  }
+
+  .ant-row,
+  .el-row {
+    > .ant-col,
+    > .el-col {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      margin-bottom: 16px;
+
+      > label {
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .btn-group-col {
+    text-align: right;
+    .pa-btn.el-button + .pa-btn.el-button {
+      margin-left: 16px;
+    }
+  }
+
+  .pa-search-form-btn {
+    width: 100%;
+    font-size: 0;
+    display: flex;
+    justify-content: flex-end;
+    button + button {
+      margin-left: 14px;
+    }
+  }
+
+  .fold-btn {
+    font-size: $font-size-base;
+    color: $primary-color;
+    cursor: pointer;
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 1;
+
+    > .pa-icon {
+      font-size: $font-size-base;
+      margin-left: 5px;
+      transition: all 0.1s;
+    }
+  }
+
+  .fold-btn.open {
+    > .pa-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  .suffix {
+    .ant-col,
+    .el-col {
+      text-align: right;
+
+      button + button {
+        margin-left: 14px;
+      }
+    }
+  }
+}

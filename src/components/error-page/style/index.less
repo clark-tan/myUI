@@ -1,0 +1,61 @@
+.pa-errorPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .pa-errorPage-content {
+    width: 100%;
+    .pa-errorPage-img {
+      background-size: 100% 100%;
+      margin: 0 auto;
+
+      &.img404 {
+        background-image: url("../img/404.png");
+      }
+      &.img403 {
+        background-image: url("../img/403.png");
+      }
+      &.img500 {
+        background-image: url("../img/500.png");
+      }
+      &.img200 {
+        background-image: url("../img/200.png");
+      }
+      &.imgno-data {
+        background-image: url("../img/no-data.png");
+      }
+    }
+    .pa-errorPage-msg {
+      height: 45px;
+      font-size: 32px;
+      font-weight: 400;
+      color: #9fa9bd;
+      line-height: 45px;
+      text-align: center;
+      margin-top: 55px;
+    }
+    .pa-errorPage-foot,
+    .pa-errorPage-foot-static {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pa-errorPage-foot-static {
+      > button + button {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &.imgno-data-custom {
+    .pa-errorPage-msg {
+      margin-top: 16px;
+      color: #999; //特殊自定义，不抽取
+      font-size: 12px;
+      height: 12px;
+      line-height: 12px;
+    }
+  }
+}

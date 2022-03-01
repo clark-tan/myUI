@@ -1,0 +1,18 @@
+@import "../../style/themes/common.less";
+.pa-dropdown {
+  cursor: pointer;
+}
+.pa-dropdown-menu {
+  .pa-dropdown-item:focus,
+  .pa-dropdown-item:not(.is-disabled):hover {
+    background-color: @select-tag-background;
+    color: @btn-font-color;
+  }
+  .pa-dropdown-item.is-disabled {
+    color: #999;
+    &:hover {
+      cursor: not-allowed;
+      pointer-events: inherit;
+    }
+  }
+}

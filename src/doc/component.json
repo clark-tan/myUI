@@ -1,0 +1,303 @@
+[
+  {
+    "title": "开发指南",
+    "icon": "icon-riqixuanzeqi",
+    "path": "/doc/installation"
+  },
+  {
+    "title": "更新日志",
+    "icon": "icon-riqixuanzeqi",
+    "path": "update"
+  },
+  {
+    "title": "基础组件",
+    "icon": "icon-riqixuanzeqi",
+    "path": "/1_1",
+    "id": "0",
+    "children": [
+      {
+        "title": "按钮 Button",
+        "icon": "icon-riqixuanzeqi",
+        "id": "0-0",
+        "parentId": "0",
+        "path": "/doc/button"
+      },
+      {
+        "title": "图标 Icon",
+        "id": "0-1",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/icon"
+      },
+      {
+        "title": "提示 Tooltip",
+        "id": "0-2",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/tooltip"
+      },
+      {
+        "title": "弹出浮层 PopConfirm",
+        "id": "0-3",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/pop-confirm"
+      },
+      {
+        "title": "日期 DatePicker",
+        "id": "0-4",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/date-picker"
+      },
+      {
+        "title": "加载中 Loading",
+        "id": "0-5",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/loading"
+      },
+      {
+        "title": "信息提示 Message",
+        "id": "0-6",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/message"
+      },
+      {
+        "title": "弹窗 Dialog",
+        "id": "0-7",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/dialog"
+      },
+      {
+        "title": "弹窗2.0 Dialog-s",
+        "id": "0-7s",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/dialog-s"
+      },
+      {
+        "title": "弹窗(编程式) MessageBox",
+        "id": "0-8",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/message-box"
+      },
+      {
+        "title": "抽屉 Drawer",
+        "id": "0-9",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/drawer"
+      },
+      {
+        "title": "抽屉2.0 Drawer-s",
+        "id": "0-9s",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/drawer-s"
+      },
+      {
+        "title": "输入框 Input",
+        "id": "0-10",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/input"
+      },
+      {
+        "title": "输入框2.0 Input-s",
+        "id": "0-10s",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/input-s"
+      },
+      {
+        "title": "数字输入框 InputNumber",
+        "id": "0-11",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/input-number"
+      },
+      {
+        "title": "多选框 CheckBox",
+        "id": "0-12",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/checkbox"
+      },
+      {
+        "title": "多选下拉框 MultipleSelect",
+        "id": "0-13",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/multiple-select"
+      },
+      {
+        "title": "下拉 Select",
+        "id": "0-14",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/select"
+      },
+      {
+        "title": "下拉2.0 Select-s",
+        "id": "0-14s",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/select-s"
+      },
+      {
+        "title": "树 Tree",
+        "id": "0-15",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/tree"
+      },
+      {
+        "title": "单选框 Radio",
+        "id": "0-16",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/radio"
+      },
+      {
+        "title": "开关 Switch",
+        "id": "0-17",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/switch"
+      },
+      {
+        "title": "时间选择器 TimePicker",
+        "id": "0-18",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/timePicker"
+      },
+      {
+        "title": "下拉菜单 Dropdown",
+        "id": "0-19",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/dropdown"
+      }
+    ]
+  },
+  {
+    "title": "布局/结构类",
+    "id": "1",
+    "path": "/1_2",
+    "icon": "icon-riqixuanzeqi",
+    "children": [
+      {
+        "title": "页脚/版权 Footer",
+        "id": "1-0",
+        "parentId": "1",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/footer"
+      },
+      {
+        "title": "页头/首页 Header",
+        "id": "1-1",
+        "parentId": "1",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/header"
+      },
+      {
+        "title": "主布局 TableLayout",
+        "id": "1-2",
+        "parentId": "1",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/table-layout"
+      },
+      {
+        "title": "详情布局 DetailLayout",
+        "id": "1-3",
+        "parentId": "1",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/detail-layout"
+      }
+    ]
+  },
+  {
+    "title": "导航类",
+    "id": "2",
+    "path": "/1_3",
+    "icon": "icon-riqixuanzeqi",
+    "children": [
+      {
+        "title": "菜单 Menu",
+        "id": "2-0",
+        "parentId": "2",
+        "icon": "icon-riqixuanzeqi",
+        "path": "menu"
+      },
+      {
+        "title": "面包屑 Breadcrumb",
+        "id": "2-1",
+        "parentId": "2",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/breadcrumb"
+      },
+      {
+        "title": "标签页 Tabs",
+        "id": "2-2",
+        "parentId": "2",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/tabs"
+      },
+      {
+        "title": "穿梭框 Transfer",
+        "id": "2-3",
+        "parentId": "2",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/transfer"
+      },
+      {
+        "title": "标签页2.0 Tabs-s",
+        "id": "2-4",
+        "parentId": "0",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/tabs-s"
+      }
+    ]
+  },
+  {
+    "title": "图表类",
+    "id": "3",
+    "path": "/1_4",
+    "icon": "icon-riqixuanzeqi",
+    "children": [
+      {
+        "title": "搜索栏 SearchForm",
+        "id": "3-0",
+        "parentId": "3",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/search-form"
+      },
+      {
+        "title": "错误页 ErrorPage",
+        "id": "3-1",
+        "parentId": "3",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/error-page"
+      },
+      {
+        "title": "表格 Table",
+        "id": "3-2",
+        "parentId": "3",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/table"
+      },
+      {
+        "title": "表单 Form",
+        "id": "3-3",
+        "parentId": "3",
+        "icon": "icon-riqixuanzeqi",
+        "path": "/doc/form"
+      }
+    ]
+  }
+]

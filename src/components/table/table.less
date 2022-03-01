@@ -1,0 +1,185 @@
+@import '../style/themes/common.less';
+@svgWidth: 191px;
+
+.pa-table {
+  .vxe-table--render-default {
+    color: @font-color;
+    font-family: @font-family;
+    // 表头
+    &.border--default ::v-deep.vxe-table--header-wrapper {
+      background-color: #f7f9fc;
+      font-weight: bold;
+      color: @font-color;
+    }
+    // 行hover
+    ::v-deep.vxe-body--row.row--hover {
+      background-color: @themes-background-disabled;
+    }
+    // 空内容
+    ::v-deep.vxe-table--empty-content {
+      width: @svgWidth;
+
+      .nodata {
+        width: @svgWidth;
+        height: 98px;
+        background-image: url('./assets/icon-nodata.png');
+        background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+      }
+      .nodata-tips {
+        color: @themes-font-color-disabled;
+        margin: 16px auto;
+      }
+    }
+    // 隐藏表格底线
+    ::v-deep.vxe-table--border-line {
+      border: 0px;
+    }
+    // 单元格
+    ::v-deep.vxe-cell {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+  // 解决IE下列宽拖拽条可能错位问题
+  ::v-deep.vxe-header--column .vxe-resizable {
+    top: 0px;
+  }
+  // 校验提示
+  ::v-deep.vxe-table--render-default
+    .vxe-body--column.col--valid-error
+    .vxe-cell--valid
+    .vxe-cell--valid-msg {
+    color: rgb(255, 0, 0);
+    background-color: #ffffff;
+    border: 1px solid #f56c6c;
+  }
+
+  // 操作栏
+  .vxe-toolbar {
+    height: 48px;
+  }
+
+  // 分页器
+  .vxe-pager {
+    height: 80px;
+
+    // 分页器左边区域
+    ::v-deep.vxe-pager--left-wrapper {
+      line-height: 2.1em;
+      position: absolute;
+      left: 0px;
+      margin-left: 8px;
+    }
+    // 选页数
+    ::v-deep.vxe-pager--sizes {
+      width: 102px;
+      .vxe-input {
+        height: 32px;
+      }
+    }
+    ::v-deep.vxe-pager--jump {
+      margin-right: 0px;
+      // 跳页
+      .vxe-pager--goto {
+        border-radius: 2px;
+        width: 48px;
+        height: 32px;
+      }
+    }
+
+    // 隐藏分页器
+    &.hidden-pager {
+      display: none;
+    }
+
+    // 分页器按钮颜色——激活
+    ::v-deep.vxe-pager--jump-next:not(.is--disabled):active,
+    ::v-deep.vxe-pager--jump-prev:not(.is--disabled):active,
+    ::v-deep.vxe-pager--next-btn:not(.is--disabled):active,
+    ::v-deep.vxe-pager--num-btn:not(.is--disabled):active,
+    ::v-deep.vxe-pager--prev-btn:not(.is--disabled):active {
+      color: @themes-bule-color;
+    }
+
+    // 分页器按钮颜色——已激活
+    ::v-deep.vxe-pager--jump-next.is--active,
+    ::v-deep.vxe-pager--jump-prev.is--active,
+    ::v-deep.vxe-pager--next-btn.is--active,
+    ::v-deep.vxe-pager--num-btn.is--active,
+    ::v-deep.vxe-pager--prev-btn.is--active {
+      color: @themes-bule-color;
+    }
+
+    // 分页器按钮颜色——hover
+    ::v-deep.vxe-pager--jump-next:not(.is--disabled):hover,
+    ::v-deep.vxe-pager--jump-prev:not(.is--disabled):hover,
+    ::v-deep.vxe-pager--next-btn:not(.is--disabled):hover,
+    ::v-deep.vxe-pager--num-btn:not(.is--disabled):hover,
+    ::v-deep.vxe-pager--prev-btn:not(.is--disabled):hover {
+      color: @themes-bule-color;
+    }
+
+    // 分页器按钮颜色——获取焦点
+    ::v-deep.vxe-pager--jump-next:not(.is--disabled):focus,
+    ::v-deep.vxe-pager--jump-prev:not(.is--disabled):focus,
+    ::v-deep.vxe-pager--next-btn:not(.is--disabled):focus,
+    ::v-deep.vxe-pager--num-btn:not(.is--disabled):focus,
+    ::v-deep.vxe-pager--prev-btn:not(.is--disabled):focus {
+      -webkit-box-shadow: 0 0 0.25em 0 @themes-bule-color;
+      box-shadow: 0 0 0.25em 0 @themes-bule-color;
+    }
+
+    // 分页器页数选择框——已激活
+    ::v-deep.vxe-select.is--active > .vxe-input .vxe-input--inner {
+      border-color: @themes-bule-color;
+    }
+    ::v-deep.vxe-input--inner {
+      border-radius: 2px;
+    }
+
+    // 分页器页数选择框——已选项
+    ::v-deep.vxe-select-option.is--selected {
+      color: @themes-bule-color;
+    }
+
+    // 分页器页数输入框——获取焦点
+    ::v-deep.vxe-pager--jump .vxe-pager--goto:focus {
+      border-color: @themes-bule-color;
+    }
+  }
+
+  /*滚动条整体部分*/
+  .table-scrollbar ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  /*滚动条的轨道*/
+  // .table-scrollbar ::-webkit-scrollbar-track {
+  //   background-color: #ffffff;
+  // }
+
+  /*滚动条里面的小方块，能向上向下移动*/
+  .table-scrollbar ::-webkit-scrollbar-thumb {
+    background-color: @themes-border-disabled;
+    border-radius: 8px;
+  }
+
+  .table-scrollbar ::-webkit-scrollbar-thumb:hover {
+    background-color: #d5d5d5;
+  }
+
+  .table-scrollbar ::-webkit-scrollbar-thumb:active {
+    background-color: #d5d5d5;
+  }
+
+  /*边角，即两个滚动条的交汇处*/
+  // .table-scrollbar ::-webkit-scrollbar-corner {
+  //   background-color: #ffffff;
+  // }
+
+  ::v-deep .el-loading-mask {
+    z-index: 990; // 降低表格loading层级
+  }
+}

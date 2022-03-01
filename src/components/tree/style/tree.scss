@@ -1,0 +1,16 @@
+@import '../../style/themes/common';
+.pa-tree {
+
+  .el-tree__empty-block {
+    padding: 20px;
+
+    .pa-errorPage {
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+    }
+  }
+
+  span {
+    color: $font-color;
+  }
+}

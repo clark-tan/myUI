@@ -1,0 +1,90 @@
+@import '../../style/themes/common.scss';
+// new styles
+.pa-dialog div {
+  box-sizing: border-box;
+}
+.pa-dialog .el-dialog * {
+  font-family: $font-family;
+}
+.pa-dialog {
+  .el-dialog__header {
+    [class*=' el-icon-'],
+    [class^='el-icon-'] {
+      color: $btn-default-text-color;
+    }
+  }
+}
+.pa-dialog .el-dialog__header * {
+  color: $font-color;
+}
+.pa-dialog .el-dialog__header {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid $border-color;
+}
+.pa-dialog .el-dialog__title {
+  font-weight: normal;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+}
+.pa-dialog .el-dialog__title:after {
+  // content: "";
+  width: 4px;
+  height: 16px;
+  background: $themes-bule-color;
+  position: absolute;
+  top: 15px;
+  left: 24px;
+}
+.pa-dialog .el-dialog__headerbtn {
+  top: 24px;
+  right: 24px;
+}
+.pa-dialog .el-dialog__headerbtn .el-dialog__close {
+  font-size: 20px;
+}
+.pa-dialog .el-dialog__body {
+  padding: 0;
+}
+.pa-dialog .el-dialog-content {
+  width: 100%;
+  min-height: 114px;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pa-dialog .el-dialog-content * {
+  color: $font-color;
+}
+.pa-dialog .el-dialog-footer {
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid $border-color;
+
+  .el-button + .el-button {
+    margin-left: 24px;
+  }
+}
+.pa-dialog .el-form-item__error {
+  color: #f56c6c;
+}
+.pa-dialog .el-radio__input.is-checked .el-radio__inner {
+  border-color: $themes-bule-color;
+  background: $themes-bule-color;
+}
+.pa-dialog .el-radio__input.is-checked + .el-radio__label {
+  color: $themes-bule-color;
+}
+.pa-dialog .el-radio__inner:hover {
+  border-color: $themes-bule-color;
+}
+.pa-dialog .el-dialog__headerbtn:focus .el-dialog__close,
+.pa-dialog .el-dialog__headerbtn:hover .el-dialog__close {
+  color: $themes-bule-color;
+}

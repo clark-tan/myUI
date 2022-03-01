@@ -1,0 +1,83 @@
+@import "../../style/themes/common.less";
+// new styles
+@headerHeight: 65px;
+@footerHeight: 81px;
+.pa-drawer-s {
+  .pa-drawer-body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .drawer-header {
+    display: flex;
+    height: @headerHeight;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    margin: 0;
+    border-bottom: 1px solid #e8e8e8;
+    [class*=" el-icon-"],
+    [class^="el-icon-"] {
+      color: @btn-default-text-color;
+    }
+    span {
+      font-size: 16px;
+      height: 16px;
+      line-height: 16px;
+      font-weight: normal;
+      color: @font-color;
+      float: left;
+    }
+    span:after {
+      // content: "";
+      width: 4px;
+      height: 16px;
+      background: @themes-bule-color;
+      position: absolute;
+      top: 16px;
+      left: 18px;
+    }
+    .el-drawer__close-btn {
+      width: 16px;
+      height: 16px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+    }
+  }
+  .drawer-body {
+    width: 100%;
+    // height: calc(100vh - 65px - 80px);
+    overflow: auto;
+    padding: 24px;
+    flex: 1;
+  }
+  .drawer-footer {
+    width: 100%;
+    padding: 24px;
+    border-top: 1px solid #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: @footerHeight;
+    > *:not(:first-child) {
+      margin-left: 24px;
+    }
+  }
+  .el-form-item__error {
+    color: #f56c6c;
+  }
+  .el-popconfirm .el-popconfirm__main {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .el-dialog__close:hover {
+    color: @themes-bule-color;
+  }
+}

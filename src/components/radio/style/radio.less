@@ -1,0 +1,49 @@
+@import "../../style/themes/common.less";
+.pa-radio {
+  margin-right: 37px;
+  &.el-radio.is-bordered {
+    border-color: @--checkbox-border-color;
+    &.is-checked {
+      border-color: @--is-checked;
+    }
+    &.is-disabled {
+      border-color: @themes-font-color-disabled;
+    }
+  }
+  .el-radio__label {
+    padding-left: 8px;
+    color: @font-color;
+    font-weight: normal;
+  }
+  .el-radio__inner {
+    border-color: @--checkbox-border-color;
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .el-radio__input {
+    &.is-checked {
+      & + .el-radio__label {
+        color: @font-color;
+      }
+      .el-radio__inner {
+        background: transparent;
+        &::after {
+          background: @--is-checked;
+        }
+      }
+    }
+    &.is-disabled {
+      & + .el-radio__label {
+        color: @themes-font-color-disabled;
+      }
+      .el-radio__inner {
+        background: transparent;
+        &::after {
+          background: @themes-font-color-disabled;
+        }
+      }
+    }
+  }
+}

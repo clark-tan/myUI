@@ -1,0 +1,67 @@
+@import '../../style/themes/common.scss';
+
+// new styles
+.pa-input .el-input__inner {
+  height: 32px;
+  line-height: 1;
+  border-radius: 2px;
+  color: $font-color;
+  font-size: $font-size;
+  font-family: $font-family;
+  padding-left: 8px;
+}
+.el-input__inner {
+  color: $font-color;
+  &::placeholder {
+    color: $font-placeholder-color !important;
+  }
+}
+.el-textarea__inner {
+  color: $font-color;
+  &::placeholder {
+    color: $font-placeholder-color !important;
+  }
+}
+.pa-input .el-input__icon {
+  line-height: 32px;
+}
+
+.pa-input .el-textarea__inner {
+  border-radius: 2px;
+  padding: 0 8px;
+  font-size: $font-size;
+}
+
+.pa-input.el-input.is-active .el-input__inner,
+.pa-input .el-input__inner:focus {
+  border-color: $themes-bule-color;
+}
+
+.pa-input .el-textarea__inner:focus {
+  border-color: $themes-bule-color;
+}
+
+.pa-input {
+  &.el-input {
+    &.is-disabled {
+      .el-input__inner {
+        background-color: $btn-disabled-color;
+        color: $input-disabled-color;
+        border-color: $border-color;
+      }
+    }
+  }
+
+  &.pa-input-prefix {
+    .el-input__inner {
+      padding-left: 30px;
+    }
+    .el-input__prefix {
+      left: 0;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

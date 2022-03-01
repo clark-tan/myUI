@@ -1,0 +1,47 @@
+.pa-switch {
+  position: relative;
+  &.pa-switch-aside-text,
+  &.pa-switch-inner-text {
+    > .el-switch__label {
+      position: absolute;
+      z-index: 1;
+      top: 1px;
+      display: none;
+      margin: 0;
+      white-space: nowrap;
+    }
+    > .is-active {
+      display: block;
+      top: 0;
+    }
+  }
+  &.pa-switch-aside-text {
+    > .el-switch__label {
+      position: static;
+      order: 2;
+    }
+    > .el-switch__core {
+      order: 1;
+    }
+  }
+  &.pa-switch-inner-text {
+    > .el-switch__label--left {
+      right: 5px;
+    }
+    > .el-switch__label--right {
+      left: 5px;
+    }
+    > .el-switch__core {
+      width: 100% !important;
+    }
+    > .is-active {
+      color: #fff;
+    }
+  }
+  &.pa-switch-aside-text {
+    > .el-switch__label--left,
+    > .el-switch__label--right {
+      left: 48px;
+    }
+  }
+}

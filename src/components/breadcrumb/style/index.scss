@@ -1,0 +1,22 @@
+@import '../../style/themes/common.scss';
+.pa-breadcrumb {
+
+  .pa-breadcurmb-goback {
+    float: left;
+    cursor: pointer;
+    .pa-breadcurmb-goback-title {
+      margin-left: 4px;
+      margin-right: 24px;
+      color: $themes-bule-color;
+    }
+  }
+
+  .el-breadcrumb__separator[class*=icon] {
+    margin: 0 4px;
+  }
+
+  &>.el-breadcrumb {
+    display: flex;
+    align-items: center;
+  }
+}

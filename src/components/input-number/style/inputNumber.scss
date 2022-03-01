@@ -1,0 +1,42 @@
+@import '../../style/themes/common.scss';
+// new styles
+.pa-input.el-input-number {
+  line-height: 30px;
+}
+.pa-input.el-input-number.is-controls-right .el-input-number__increase, .pa-input.el-input-number.is-controls-right .el-input-number__increase {
+  line-height: 15px;
+}
+.pa-input.el-input-number.is-controls-right .el-input-number__decrease, .pa-input.el-input-number.is-controls-right .el-input-number__increase {
+  line-height: 15px;
+}
+
+.pa-input {
+  &.el-input-number {
+    span {
+      &.is-disabled {
+        background-color: $themes-background-disabled!important;
+      }
+    }
+    &.is-controls-right {
+      .el-input-number__decrease {
+        opacity: 0;
+      }
+      .el-input-number__increase {
+        opacity: 0;
+      }
+    }
+  }
+
+  &:hover {
+    &.el-input-number {
+      &.is-controls-right {
+        .el-input-number__decrease {
+          opacity: 1;
+        }
+        .el-input-number__increase {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

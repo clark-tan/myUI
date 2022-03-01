@@ -1,0 +1,58 @@
+@import '../../style/themes/common.scss';
+.pa-transfer {
+  display: flex !important;
+  flex-wrap: nowrap;
+  width: 100%;
+  .el-transfer-panel {
+    width: 50%;
+  }
+  .el-transfer-panel__item{
+    color: #333;
+    font-weight: normal;
+  }
+  > .el-transfer__buttons {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    .el-button {
+      margin: 0;
+    }
+    .el-button + .el-button {
+      margin-left: 16px;
+    }
+  }
+}
+.pa-transfer-layout {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  .left-container {
+    width: 50%;
+  }
+  .right-container {
+    width: 50%;
+  }
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: $--is-checked;
+  border-color: $--is-checked;
+}
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: $--is-checked;
+}
+.pa-transfer-layout-tree {
+  .left-body,
+  .right-body {
+    height: calc(100% - 40px);
+    .tree-empty {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .tree-table-empty{
+      padding: 10px;
+    }
+  }
+}

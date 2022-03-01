@@ -1,0 +1,65 @@
+@import "../../style/themes/common.less";
+
+// new styles
+.pa-input-s {
+  .el-input__inner {
+    line-height: 1;
+    border-radius: 2px;
+    font-size: @font-size;
+    font-family: @font-family;
+    padding-left: 8px;
+  }
+  .el-textarea__inner {
+    border-radius: 2px;
+    padding: 5px;
+    font-size: @font-size;
+  }
+  .el-textarea__inner,
+  .el-input__inner {
+    color: @font-color;
+    &::placeholder {
+      color: @font-placeholder-color !important;
+    }
+  }
+  // 图标
+  &.el-input--suffix .el-input__suffix,
+  &.el-input--prefix .el-input__prefix {
+    display: flex;
+    align-items: center;
+    width: 16px;
+  }
+  .el-input__prefix {
+    left: 8px;
+  }
+  .el-input__suffix {
+    right: 8px;
+  }
+  .el-input__icon {
+    width: 16px;
+  }
+  &.el-input--prefix {
+    .el-input__inner {
+      padding-left: 30px;
+    }
+  }
+
+  &.el-input {
+    &.is-disabled {
+      .el-input__inner {
+        background-color: @btn-disabled-color;
+        color: @input-disabled-color;
+        border-color: @border-color;
+      }
+    }
+  }
+  .el-input-group__prepend,
+  .el-input-group__append {
+    .pa-select .el-input.is-focus .el-input__inner {
+      border-color: transparent;
+    }
+    .pa-btn {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}
