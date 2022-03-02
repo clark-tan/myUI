@@ -2,14 +2,14 @@
  * @Autor: clark tan
  * @Date: 2021-06-28 17:02:14
  * @LastEditors: clark tan
- * @LastEditTime: 2021-07-01 19:46:41
+ * @LastEditTime: 2022-03-02 09:45:42
  * @Description: 
 -->
 <template>
   <div class="page-header">
     <pa-header
       :system-name="systemName"
-      :logoIcon="'icon-shuban'"
+      :logoImg="logoImg"
       :user-name="userName"
       @logout="logout"
     >
@@ -33,17 +33,19 @@
 </template>
 
 <script>
+import logoImg from "@/examples/logo-copyright.svg";
 export default {
   name: "Navbar",
   data() {
     return {
-      systemName: "iHybrid design",
+      systemName: "my design",
       userName: "系统管理员",
+      logoImg,
     };
   },
 
   created() {
-    this.$pahmUtils.title.update("iHybrid design");
+    this.$pahmUtils.title.update("my design");
   },
   methods: {
     logout() {

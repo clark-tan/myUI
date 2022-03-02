@@ -2,7 +2,7 @@
  * @Autor: clark tan
  * @Date: 2021-06-28 17:02:14
  * @LastEditors: clark tan
- * @LastEditTime: 2021-07-01 19:46:41
+ * @LastEditTime: 2022-03-02 09:47:19
  * @Description: 
 -->
 <template>
@@ -10,7 +10,7 @@
     <pa-header
       :system-name="systemName"
       :user-name="userName"
-      :logoIcon="'icon-shuban'"
+      :logoImg="logoImg"
       @logout="logout"
     >
       <div slot="headerContent" class="header-content">
@@ -47,19 +47,21 @@
 
 <script>
 import { mapState } from "vuex";
+import logoImg from "@/examples/logo-copyright.svg";
 export default {
   name: "Navbar",
   data() {
     return {
-      systemName: "iHybrid design pro",
+      systemName: "my design pro",
       userName: "系统管理员",
+      logoImg,
     };
   },
   computed: {
     ...mapState(["menuCollapse"]),
   },
   created() {
-    this.$pahmUtils.title.update("iHybrid design pro");
+    this.$pahmUtils.title.update("my design pro");
   },
   methods: {
     logout() {
