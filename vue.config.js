@@ -2,10 +2,13 @@
  * @Autor: clark tan
  * @Date: 2021-12-21 14:43:02
  * @LastEditors: clark tan
- * @LastEditTime: 2022-02-15 10:43:49
+ * @LastEditTime: 2022-03-02 10:12:13
  * @Description:
  */
 const vueConfig = {
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/myUI/'
+  : '/',
   // 在exports中添加，这里很关键，不配置不行
   transpileDependencies: ["element-ui"],
   configureWebpack: (config) => {
