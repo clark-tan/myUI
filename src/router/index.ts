@@ -7,7 +7,8 @@
  */
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-// import Home from "../views/Home.vue";
+import Doc from "../doc/layout/index.vue";
+import Examples from "../examples/layout/index.vue";
 
 Vue.use(VueRouter);
 
@@ -28,8 +29,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/doc",
     redirect: "/doc/installation",
-    component: () =>
-      import(/* webpackChunkName: "layout" */ "../doc/layout/index.vue"),
+    component: Doc,
     children: [
       {
         path: "/doc/installation",
@@ -311,8 +311,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/examples",
     redirect: "/examples/normal-search-list",
-    component: () =>
-      import(/* webpackChunkName: "examples" */ "../examples/layout/index.vue"),
+    component: Examples,
     children: [
       {
         path: "/examples/error-page-200",
